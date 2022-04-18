@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "Name": "John ",
+            "Dog" : "Maltese",
+            "email": "john@gmail.com" 
+
+        }
+        
+
+    ],
+    "Pet":[
+        {
+            "id":"1",
+            "Name": "Chopper",
+            "description": "little white dog"
+        }
+       
+    ]
+    
+}

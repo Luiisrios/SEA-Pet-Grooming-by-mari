@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groming Meber form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+     <!--button for the drop down-->
+     <nav class="menubar">
+        <div class="company-name"> Pet Grooming By Mariela </div>
+        <a href="#" class="toggle-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+        <!--links for the drop down list-->
+        <div class= "nav-links"> 
+            <ul>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <audio id="beep" preload="auto">
+                    <source src="scissoraudio.mp3">
+                </audio>
+            </ul>
+            <script>
+                var beepOne = $("#beep")[0];
+                $(".nav-links")
+                .mouseenter(function(){
+                    beepOne.play();
+                });
+            </script>
+        </div>
+    </nav>
+
+
+
+    <div class="login-page">
+        
+        <div class="form">
+           
+            <form class="register-form">
+                <form action="connect.php" method="post">
+                    <input type="text" placeholder="User name" name="Name"/>
+                    <input type="text" placeholder="Password"/>
+                    <input type="text" placeholder="Email id"/>
+                    
+                    <button>Create</button>
+                
+                    <p class="message">Already Registerd? <a href="#">Login</a> </p>
+                
+               
+            
+            </form>
+            <form class="Login-form">
+                <input type="text" placeholder="user name"/>
+                <input type="password" placeholder="password"/>
+                <button>Login</button>
+                <p class="message">Not Registerd <a href="#">Register</a> </p>
+             </form>
+             </form>
+            
+            
+
+
+
+
+          
+
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity:"toggle"}, "slow");
+
+        });
+    </script>
+    <!--footer-->
+    <div class="footer">
+        <!--sections in the footer-->
+        <div class="footer-content">
+            <div class="footer-section about">
+                 <h1><span>Pet Grooming By Mariela</span></h1>
+                 <br>
+                <P>Welcome to pet grooming by Mariella where we<br>
+                 provide you and your pet the best groomning needs.
+                </P>
+                <br>
+                <div class="contact">
+                    <span><i class="fa fa-phone"></i> &nbsp;818-660-3708</span>
+                    <span><i class=" fa fa-envelope"></i> &nbsp;info@groomingbymari.com</span>
+                </div>
+                <div class="socials">
+                    <a href="https://instagram.com/petgroomingbymariela?igshid=uyq2p7391h6r"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <br>
+              <ul>
+                  <a href="Event.html">
+                      <li> Upcoming Events</li>
+                  </a>
+                  <a href="gallery.html">
+                    <li>Doggy Gallery</li>
+                  </a>
+                  
+            </ul>
+
+                
+          </div>
+            <div class="footer-section contact-form">
+                <h2>Questions for us:</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email Address">
+                    <br>
+                    <textarea name="message" class="text-input contact-input" placeholder="Message"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <span><i class="fa fa-envelope"></i> &nbsp;send</span>
+                    </button>
+                </form>
+            </div>
+    
+
+            <!--very bottom copyright-->
+         <div class="footer-bottom">
+            &copy; Pet Grooming by Mariela | Pet Services
+         </div>
+        </div>
+        
+    </div>
+</body>
+</html>
